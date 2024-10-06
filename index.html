@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSEA & NSEC Study Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #2E8B57;
+        }
+
+
+        h2 {
+            color: #4682B4;
+        }
+
+
+        .week-container {
+            border: 2px solid #4682B4;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+
+        .focus-area {
+            color: #2E8B57;
+            font-weight: bold;
+        }
+
+
+        #progress-tracker {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #d3f5d7;
+            border-radius: 10px;
+        }
+
+
+        #progress-bar {
+            width: 100%;
+            height: 20px;
+        }
+
+
+        #day-counter {
+            padding: 10px;
+            background-color: #f5d3d3;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NSEA & NSEC Combined Study Schedule</h1>
+
+
+    <div id="progress-tracker">
+        <h2>Progress Tracker</h2>
+        <p>Completed: <span id="completed-percentage">0%</span></p>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+
+
+    <div id="day-counter">
+        <h2>Time Left Until Exam</h2>
+        <p id="countdown"></p>
+    </div>
+
+
+    <!-- Week 1 -->
+    <div class="week-container">
+        <h2>Week 1: 7th October to 13th October</h2>
+        <p class="focus-area">Focus Areas: Electromagnetism (NSEA), Physical Chemistry (NSEC)</p>
+
+
+        <strong>Electromagnetism (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 2: Electrostatics (Griffiths)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 3: Potentials (Griffiths)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 4: Electric Fields in Matter (Griffiths)</label></li>
+        </ul>
+
+
+        <strong>Physical Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Thermodynamics (Atkins)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chemical Kinetics (Atkins)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 2 -->
+    <div class="week-container">
+        <h2>Week 2: 14th October to 20th October</h2>
+        <p class="focus-area">Focus Areas: Electromagnetism (NSEA), Inorganic Chemistry (NSEC)</p>
+
+
+        <strong>Electromagnetism (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 5: Magnetostatics (Griffiths)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 7: Electrodynamics (Griffiths)</label></li>
+        </ul>
+
+
+        <strong>Inorganic Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Periodic Trends (J.D. Lee)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Coordination Chemistry (J.D. Lee)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 3 -->
+    <div class="week-container">
+        <h2>Week 3: 21st October to 27th October</h2>
+        <p class="focus-area">Focus Areas: Optics (NSEA), Organic Chemistry (NSEC)</p>
+
+
+        <strong>Optics (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 1: Geometrical Optics (Ghatak)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 2: Optical Instruments (Ghatak)</label></li>
+        </ul>
+
+
+        <strong>Organic Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 8: Nucleophilic Substitution (Clayden)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 9: Elimination Reactions (Clayden)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 4 -->
+    <div class="week-container">
+        <h2>Week 4: 28th October to 3rd November</h2>
+        <p class="focus-area">Focus Areas: Optics (Part 2) (NSEA), Organic Chemistry (NSEC)</p>
+
+
+        <strong>Optics (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 3: Interference (Ghatak)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 4: Diffraction (Ghatak)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 5: Polarization (Ghatak)</label></li>
+        </ul>
+
+
+        <strong>Organic Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 5: Stereochemistry (Clayden)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 6: Stereoelectronic Effects (Clayden)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 5 -->
+    <div class="week-container">
+        <h2>Week 5: 4th November to 10th November</h2>
+        <p class="focus-area">Focus Areas: Modern Physics (NSEA), Organic Chemistry (NSEC)</p>
+
+
+        <strong>Modern Physics (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 3: Particlelike Properties (Krane)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 5: The Schrödinger Equation (Krane)</label></li>
+        </ul>
+
+
+        <strong>Organic Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 40: Carbohydrates (Clayden)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 41: Amino Acids and Peptides (Clayden)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 6 -->
+    <div class="week-container">
+        <h2>Week 6: 11th November to 17th November</h2>
+        <p class="focus-area">Focus Areas: Modern Physics (NSEA), Inorganic Chemistry (NSEC)</p>
+
+
+        <strong>Modern Physics (NSEA)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 6: Bohr Model (Krane)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 7: Hydrogen Atom (Krane)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Chapter 12: Nuclear Physics (Krane)</label></li>
+        </ul>
+
+
+        <strong>Inorganic Chemistry (NSEC)</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Transition Metals (J.D. Lee)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Metallurgy (J.D. Lee)</label></li>
+        </ul>
+    </div>
+
+
+    <!-- Week 7 -->
+    <div class="week-container">
+        <h2>Week 7: 18th November to 23rd November</h2>
+        <p class="focus-area">Focus Areas: Full Revision and Mock Tests</p>
+
+
+        <strong>NSEA Revision</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Electromagnetism Review (Griffiths)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Optics Review (Ghatak)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Modern Physics Review (Krane)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Thermodynamics Review (Verma)</label></li>
+        </ul>
+
+
+        <strong>NSEC Revision</strong>
+        <ul>
+            <li><label><input type="checkbox" class="chapter-checkbox">Organic Chemistry Review (Clayden)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Physical Chemistry Review (Atkins)</label></li>
+            <li><label><input type="checkbox" class="chapter-checkbox">Inorganic Chemistry Review (J.D. Lee)</label></li>
+        </ul>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all checkboxes
+            const checkboxes = document.querySelectorAll('.chapter-checkbox');
+            const progressBar = document.getElementById('progress-bar');
+            const completedPercentage = document.getElementById('completed-percentage');
+
+
+            // Update progress tracker
+            function updateProgress() {
+                let completedChapters = 0;
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        completedChapters++;
+                    }
+                });
+                const totalChapters = checkboxes.length;
+                const progress = (completedChapters / totalChapters) * 100;
+                progressBar.value = progress;
+                completedPercentage.textContent = `${progress.toFixed(2)}%`;
+            }
+
+
+            // Add event listeners to checkboxes
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateProgress);
+            });
+
+
+            // Countdown timer for the exam (23rd November 2024)
+            function countdown() {
+                const examDate = new Date('2024-11-23T00:00:00').getTime();
+
+
+                // Update the countdown every second
+                const timer = setInterval(function () {
+                    const now = new Date().getTime();
+                    const timeDiff = examDate - now;
+
+
+                    // Calculate days, hours, minutes, seconds
+                    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+
+                    document.getElementById('countdown').textContent = 
+                        `${days}d ${hours}h ${minutes}m ${seconds}s remaining until the exam`;
+
+
+                    // If the countdown is over
+                    if (timeDiff < 0) {
+                        clearInterval(timer);
+                        document.getElementById('countdown').textContent = "Exam day has arrived!";
+                    }
+                }, 1000);
+            }
+
+
+            countdown();
+        });
+    </script>
+</body>
+</html>
